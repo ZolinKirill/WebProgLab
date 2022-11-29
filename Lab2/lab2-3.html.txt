@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Золин Задание №2</title>
+<head>
+<title>Управление изображением с помощью JavaScript</title>
+<script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<style>
+#chel {
+position: absolute;
+left:50%;
+top:50%;
+}
+</style>
+<img src="G.PNG" width="150" height="150" id="chel"/>
+<script language="javascript" type="text/javascript">
+document.onkeydown = function checkKeycode(event)
+{
+var keycode;
+if(!event) var event = window.event;
+if (event.keyCode) keycode = event.keyCode; 
+else if(event.which) keycode = event.which;
+if (keycode==39) {
+$('#chel').animate({left: '+=20'},1000);
+}
+if (keycode==38) {
+$('#chel').animate({top: '-=20'},1000);
+}
+if (keycode==37) {
+$('#chel').animate({left: '-=20'},1000);
+}
+if (keycode==40) {
+$('#chel').animate({top: '+=20'},1000);
+}
+}
+</script>
+<h4>Выполнил студент группы ПИ-322 Золин Кирилл</h4>     
+</body>
+</html>
