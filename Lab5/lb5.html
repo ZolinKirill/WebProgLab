@@ -1,0 +1,19 @@
+<html>
+<title>Золин К.И.</title>
+<body>
+<script>
+var x = prompt("Введите размерность массива: ");
+var arr2 = [];
+document.write("Ваш массив:");
+for ( i = 0; i < x; i++ ) {
+ arr2.push( Math.round( Math.random() * 200 )-100);
+} document.write(' ' +arr2);
+document.write('<br>'+"Минимальное значение:");
+var q=Math.min.apply(null, arr2)
+document.write(q +'<br>');
+document.write('<br>'+"Максимальное значение:");
+var w=Math.max.apply(null, arr2)
+document.write(w);
+</script>
+</body>
+</html>
