@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>Золин Задание №1</title>
+<head>
+    <meta charset="utf-8" />
+    <script language="JavaScript">
+        function message_2 (){
+        alert("Добро пожаловать на мою страницу");
+        }
+        </script>
+</head>
+<body>
+    <p> Выражение – комбинация переменных, литералов и операторов, в результате
+вычисления которой получается одно единственное значение. 
+Переменные в выражениях должны быть инициализированы. </p>
+    <p> Операторы служат для управления потоком команд в JavaScript. Блоки операторов
+должны быть заключены в фигурные скобки. </p>
+    <script>
+        document.getElementsByTagName("p")[0]
+            .insertAdjacentHTML("afterend", "<form><label>Welcome on my page</label><input type='button' value='OK'></form>");
+       var form = document.forms[0];
+       form.addEventListener("click", message_2);
+     </script>
+</body>
+<h4>Выполнил студент группы ПИ-322 Золин Кирилл</h4>
+</html>
