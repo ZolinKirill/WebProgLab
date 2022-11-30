@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Золин Кирилл</title>
+	<style>
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ADD8E6, #00FFFF, #87CEFA, #1E90FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+	</style>
+</head>
+<body>
+<div align="center">
+	<div class="w3-container w3-margin-top" style="width:800px" >
+	<div class="w3-bar w3-blue">
+		<button class="w3-bar-item w3-button tablink w3-white" onclick="openComp(event,'Aeroflot')">Аэрофлот</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openComp(event,'S7')">S7</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openComp(event,'Tokyo')">Победа</button>
+	</div>
+	
+	<div id="Aeroflot" class="w3-container company w3-center w3-white w3-padding-16">
+		<img src="aero.jpg" width="500px" class="w3-margin-bottom">
+		<p>Аэрофлот является самым сильным брендом среди ведущих российских корпораций и сильнейшим авиационным брендом в мире по данным независимого агентства Brand Finance.</p>
+		<div class="container content">
+			<div id="accordionA">
+					<h3>О компании</h3>
+					<div class="weig">
+						<p>«Аэрофлот — Российские авиалинии» — российская государственно-частная авиакомпания, образованная из одного из государственных социалистических предприятий, входившего в состав советского «Аэрофлота» и осуществлявшего полёты и коммерческую деятельность на международных воздушных линиях</p>
+					</div>
+					<h3>Парк судов</h3>
+					<div>
+						<p>По состоянию на конец 2021 года парк Группы «Аэрофлот» насчитывал 356 воздушных судов: 59 широкофюзеляжных (Boeing 777, Boeing 747, Airbus А350, Airbus А330); 221 узкофюзеляжное среднемагистральное (семейство Airbus А320 и A320neo, Boeing 737-800); 76 узкофюзеляжных региональных (Superjet 100).</p>
+					</div>
+					<h3>Появление</h3>
+					<div>
+						<p>Советская государственная авиакомпания была основана в 1928 году под названием «Доброфлот» и была реорганизована под названием «Аэрофлот» в 1932 году. «Доброфлот» или «Добровольный флот» выросли из двух бывших авиакомпаний – «Добролет», основанный в 1923 году, и «Уквоздухпут», или «Украинские авиалинии», 1925 год. Эти авиалинии связывали такие города, как Москва, Горький (Нижний Новгород), Киев, Харьков (Харьков) и Одесса.</p>
+					</div>
+			</div>
+		</div>
+		<p><button class="w3-button w3-blue" onclick="window.location='aero.html'">Купить билет</button></p>
+	</div>
+
+	<div id="S7" class="w3-container company w3-center w3-white w3-padding-16" style="display:none">
+		<img src="s7.png" width="500px" class="w3-margin-bottom">	
+		<p>S7 Airlines — крупнейшая частная авиакомпания России с самым современным парком воздушных судов на российском рынке авиаперевозок. Широкая маршрутная сеть позволяет нашим пассажирам путешествовать в 181 город в 26 странах мира.</p>		
+		<div class="container content">
+			<div id="accordionS">
+					<h3>О компании</h3>
+					<div class="weig">
+						<p>S7 Airlines входит в тройку лучших авиакомпаний Восточной Европы в авторитетном международном рейтинге Skytrax. По результатам 2018 года S7 Airlines стала самой пунктуальной российской авиакомпанией, заняв шестое место в европейском рейтинге пунктуальности авиакомпаний OAG Punctuality League 2019.</p>
+					</div>
+					<h3>Парк судов</h3>
+					<div>
+						<p>Парк воздушных судов S7 Airlines — один из самых современных на российском рынке авиаперевозок. Все рейсы выполняются на самолетах ведущих мировых производителей: Airbus (61 лайнер), Boeing (23 лайнера) и Embraer (17 лайнеров). Всего в парке 101 воздушное судно.</p>
+					</div>
+					<h3>Появление</h3>
+					<div>
+						<p>В мае 1992 года по распоряжению Министерства транспорта Российской Федерации на базе Толмачевского авиаотряда было создано государственное предприятие «Авиакомпания «Сибирь». С марта 2006 года авиакомпания «Сибирь» начинает работать под новым брендом - S7 Airlines.</p>
+					</div>
+			</div>
+		</div>
+		<p><button class="w3-button w3-blue" onclick="window.location='s7.html'">Купить билет</button></p>
+	</div>
+
+	<div id="Tokyo" class="w3-container company w3-center w3-white w3-padding-16" style="display:none">
+		<img src="pobeda.png" width="500px" height="200px" class="w3-margin-bottom">
+		<p>«Победу» создаёт команда уникальных специалистов, которые слаженно работают на земле и в небе. По мировым стандартам компания считается эффективной, если на миллион клиентов приходится не более тысячи сотрудников. В «Победе» на миллион перевезённых клиентов приходится 177 сотрудников.</p>
+		<div class="container content">
+			<div id="accordionP">
+					<h3>Окомпании</h3>
+					<div class="weig">
+						<p>В 2018 году «Победа» стала мировым лидером по росту пассажиропотока. В этом же году производитель самолётов Boeing отметил, что «Победа» устанавливает новые стандарты мировой авиационной индустрии.</p>
+					</div>
+					<h3>Парк судов</h3>
+					<div>
+						<p>В парке «Победы» — 41 суперсовременных самолёт Boeing 737-800, поставленных напрямую с завода-производителя!</p>
+					</div>
+					<h3>Появление</h3>
+					<div>
+						<p>«Победа» начала летать 1 декабря 2014 года. Первый в России лоукостер стал самым успешным проектом в истории российской авиации.</p>
+					</div>
+			</div>
+		</div>
+
+		<p><button class="w3-button w3-blue" onclick="window.location='pobeda.html'">Купить билет</button></p>
+		</div>
+	</div>
+</div>
+	<script language="javascript">	
+	function openComp(evt, compName) {
+	  var i, x, tablinks;
+	  x = document.getElementsByClassName("company");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < x.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
+	  }
+	  document.getElementById(compName).style.display = "block";
+	  evt.currentTarget.className += " w3-white";
+	}
+	
+	$(function(){
+	    $("#accordionA").accordion({
+				
+		});
+		$("#accordionS").accordion({
+				
+		});
+		$("#accordionP").accordion({
+				
+		});
+	});
+	</script>
+</body>
+</html>
